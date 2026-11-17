@@ -1,6 +1,9 @@
+'''
+    Ok so it seems like that the example is setting up to create a frame using a class.
+    This is something that I want them to show me.
+'''
+
 import customtkinter as ctk
-
-
 
 ctk.set_appearance_mode("system")
 ctk.set_default_color_theme("blue")
