@@ -18,6 +18,31 @@ entry.grid(
     sticky="ew"
 )
 
+button = ctk.CTkButton(
+    app, 
+    text="Say hello", 
+    #command=greet
+)
+button.grid(
+    row=1, 
+    column=0, 
+    padx=20, 
+    pady=10, 
+    sticky="ew"
+)
+
+label = ctk.CTkLabel(
+    app, 
+    text=""
+)
+label.grid(
+    row=2, 
+    column=0, 
+    padx=20, 
+    pady=(10, 20)
+)
+
+
 
 # This will run the main loop that will open the window.
 app.mainloop()
