@@ -1,9 +1,16 @@
 import customtkinter as ctk
 
-# This should be the declartion for the main window.
-app = ctk.CTk()
-app.title("Custom Tkinter")
-app.geometry("500x500")
+class App(ctk.CTk):
+
+    def __init__(self):
+        super().__init__()
+
+        # This should be the declartion for the main window.
+        app = ctk.CTk()
+        app.title("Custom Tkinter")
+        app.geometry("500x500")
+
+        
 
 '''
 # Widgets
@@ -47,4 +54,5 @@ label.grid(
 
 
 # This will run the main loop that will open the window.
+app=App()
 app.mainloop()
