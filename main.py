@@ -5,6 +5,7 @@ app = ctk.CTk()
 app.title("Custom Tkinter")
 app.geometry("500x500")
 
+'''
 # Widgets
 entry = ctk.CTkEntry(
     app, 
@@ -41,6 +42,7 @@ label.grid(
     padx=20, 
     pady=(10, 20)
 )
+'''
 
 
 
