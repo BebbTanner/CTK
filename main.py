@@ -16,6 +16,17 @@ class App(ctk.CTk):
         app.title("Custom Tkinter")
         app.geometry("500x500")
 
+        self.checkbox_1 = ctk.CTkCheckBox(self, text="checkbox 1")
+        self.checkbox_1.grid(row=0, column=0, padx=10, pady=(10, 0), sticky="w")
+        self.checkbox_2 = ctk.CTkCheckBox(self, text="checkbox 2")
+        self.checkbox_2.grid(row=1, column=0, padx=10, pady=(10, 0), sticky="w")
+        self.button = ctk.CTkButton(self, text="my button", command=self.button_callback)
+        self.button.grid(row=3, column=0, padx=10, pady=10, sticky="ew")
+
+    def button_callback(self):
+        print("button pressed")
+
+        '''
         self.entry = ctk.CTkEntry(self, placeholder_text="Your name")
         self.entry.grid(row=0, column=0, padx=20, pady=(20, 10), sticky="ew")
         self.entry.bind("<Return>", self.greet)
@@ -32,7 +43,7 @@ class App(ctk.CTk):
             self.label.configure(text=f"Hello, {name}!")
         else:
             self.label.configure(text="Please enter your name.")
-
+        '''
 
 
 # This will run the main loop that will open the window.
